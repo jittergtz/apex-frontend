@@ -6,6 +6,7 @@
   --secondary: #ACACAC;
   --summarytext: #808080;
   --EmailItemP: #1A1A1A;
+  --emailName: #1B1B1B;
 }
 
 @theme inline {
@@ -15,7 +16,8 @@
   --font-mono: var(--font-geist-mono);
   --color-secondary: var(--secondary);
   --color-summarytext: var(--summarytext);
-  --color-EmailItemP: (var(--EmailItemP)); 
+  --color-EmailItemP: (var(--EmailItemP));
+  --color-emailName: var(--emailName) 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +27,7 @@
     --secondary: #ACACAC;
     --summarytext: #808080;
     --EmailItemP: #1A1A1A;
+    --emailName: #CECECE;
   }
 }
 
@@ -34,3 +37,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.noscrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.noscrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
