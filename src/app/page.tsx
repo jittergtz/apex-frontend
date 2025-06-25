@@ -1,6 +1,7 @@
 'use client'; // Required for event handlers and hooks in App Router
 
 import { invoke } from '@tauri-apps/api/core';
+import Link from 'next/link';
 import { useState } from 'react';
 
 
@@ -26,10 +27,12 @@ export default function Home() {
       </button>
 
       {greeting && (
-        <p className="mt-4 p-4 bg-gray-100 border border-gray-300 rounded">
+        <p className="mt-4 p-4 bg-gray-100 text-black border border-gray-300 rounded">
           <strong>Backend Response:</strong> {greeting}
         </p>
       )}
+
+      <Link href="/dashboard">Dashboard</Link>
     </main>
   );
 }
